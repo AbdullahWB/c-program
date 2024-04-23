@@ -1,21 +1,13 @@
-#include <stdio.h>
+#include <stdio.h> //me 
 int main()
 {
-    int n;
+    int n, sum = 0;
     scanf("%d", &n);
-    if (1000 <= n){
-        int thousandNumber = n / 1000;
-        int hundredNumber = (n / 100) % 10;
-        int tenNumber = (n / 10) % 10;
-        int oneNumber = n % 10;
-        if (thousandNumber == oneNumber && hundredNumber == tenNumber){
-            printf("YES\n");
-        }else{
-            printf("NO\n");
-        }
+    for (int i = 0; i <= n; i++)
+    {
+        sum += i;
+        printf("sum => %d\n", sum);
     }
-    else{
-        printf("NO\n");
-    }
+    printf("%d\n", sum);
     return 0;
 }
