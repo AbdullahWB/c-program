@@ -1,4 +1,4 @@
-#include <stdio.h> //me 
+#include <stdio.h> //me
 int main()
 {
     int n, sum = 0;
@@ -15,23 +15,37 @@ int main()
 #include <stdio.h>
 int main()
 {
-    int a,s=0;
-    scanf("%d",&a);
-    for(int i=0; i<=a; i++)
-        s=s+i;
-    printf("%d\n",s);
+    int a, s = 0;
+    scanf("%d", &a);
+    for (int i = 0; i <= a; i++)
+        s = s + i;
+    printf("%d\n", s);
     return 0;
 }
 
-//teacher
+// teacher
 #include <stdio.h>
-int main() 
+int main()
 {
-    int i,n,s;
-    s=0;
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    s=s+i;
-    printf("%d\n",s);
+    int i, n, s;
+    s = 0;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+        s = s + i;
+    printf("%d\n", s);
     return 0;
 }
+
+
+// #include <stdio.h>
+// int main()
+// {
+//     int n, sum=0;
+//     scanf("%d", &n);
+//     for (int i = 1; i <= n; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     printf("%d", sum);
+//     return 0;
+// }
