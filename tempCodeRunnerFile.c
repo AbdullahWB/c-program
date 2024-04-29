@@ -1,14 +1,32 @@
 #include <stdio.h>
+
 int main()
 {
-    for (int i = 1000; i < 10000; i++)
+    int n, tmp1 = 0, tmp2 = 1, next, sum = 0;
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; ++i)
     {
-        int thousandNumber = i / 1000;
-        int hundredNumber = (i / 100) % 10;
-        int tenNumber = (i / 10) % 10;
-        int oneNumber = i % 10;
-        if (thousandNumber == oneNumber && hundredNumber == tenNumber)
-            printf("symmetric no %d\n", i);
+        if (i == 1)
+        {
+            sum += tmp1;
+            continue;
+        }
+        if (i == 2)
+        {
+            sum += tmp2;
+            continue;
+        }
+        next = tmp1 + tmp2;
+        tmp1 = tmp2;
+        tmp2 = next;
+        sum += next;
+    };
+
+    if (n >= 2)
+    {
+        sum = tmp1 + tmp2;
+        printf("%d\n", sum);
     }
     return 0;
 }

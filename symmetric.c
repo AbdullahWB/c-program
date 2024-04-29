@@ -22,14 +22,16 @@ int main()
 #include <stdio.h>
 int main()
 {
+    int cnt = 0;
     for (int i = 1000; i < 10000; i++)
     {
-        int thousandNumber = i / 1000;
-        int hundredNumber = (i / 100) % 10;
-        int tenNumber = (i / 10) % 10;
-        int oneNumber = i % 10;
-        if (thousandNumber == oneNumber && hundredNumber == tenNumber)
-            printf("symmetric no %d\n", i);
+        int th = i / 1000;
+        int h = (i / 100) % 10;
+        int t = (i / 10) % 10;
+        int o = i % 10;
+        if (th == o && h == t)
+            cnt++;
     }
+    printf("%d\n", cnt);
     return 0;
 }
