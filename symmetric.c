@@ -35,3 +35,20 @@ int main()
     printf("%d\n", cnt);
     return 0;
 }
+
+#include <stdio.h>
+int main()
+{
+    int cnt = 0, sym=1000;
+    while(sym<10000){
+        int th = sym / 1000;
+        int h = (sym / 100) % 10;
+        int t = (sym / 10) % 10;
+        int o = sym % 10;
+        if (th == o && h == t)
+            cnt++;
+        sym++;
+    }
+    printf("%d\n", cnt);
+    return 0;
+}
