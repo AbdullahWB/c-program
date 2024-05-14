@@ -1,30 +1,11 @@
 #include <stdio.h>
-
-int main() {
-    int n;
+int main()
+{
+    int n, tmp1 = 0, tmp2 = 1, next, sum = 0;
     scanf("%d", &n);
-    
-    // Check if n is less than 2
-    if (n < 2) {
-        printf("NO");
-    } else {
-        int is_prime = 1; // Assume n is prime
-
-        // Iterate from 2 to sqrt(n)
-        for (int i = 2; i * i <= n; i++) {
-            if (n % i == 0) {
-                is_prime = 0; // n is divisible by i, hence not prime
-                break;
-            }
-        }
-
-        // Output the result based on is_prime
-        if (is_prime) {
-            printf("YES");
-        } else {
-            printf("NO");
-        }
-    }
-    
+    next = tmp1 + tmp2;
+    tmp1 = tmp2;
+    tmp2 = next;
+    printf("%d",next);
     return 0;
 }

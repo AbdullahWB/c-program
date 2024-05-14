@@ -5,7 +5,7 @@ int main()
     int n, tmp1 = 0, tmp2 = 1, next, sum = 0;
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; ++i)
+    for (int i = 1; i <= n; i++)
     {
         if (i == 1)
         {
@@ -32,24 +32,37 @@ int main()
 }
 
 
-#include<stdio.h>
+// #include <stdio.h>
+// int main()
+// {
+//     int n, tmp1 = 0, tmp2 = 1, next, sum = 0;
+//     scanf("%d", &n);
+//     next = tmp1 + tmp2;
+//     tmp1 = tmp2;
+//     tmp2 = next;
+//     printf("%d",next);
+//     return 0;
+// }
 
-int main()
-{
-    int i, a1, a2, a3, n;
-    a1 = 1;
-    a2 = 1;
 
-    scanf("%d", &n);
+// #include<stdio.h>
 
-    for (i = 1; i <= n - 2; i++)
-    {
-        a3 = a1 + a2;
-        a1 = a2;
-        a2 = a3;
-    }
+// int main()
+// {
+//     int i, a1, a2, a3, n;
+//     a1 = 1;
+//     a2 = 1;
 
-    printf("%d", a3);
+//     scanf("%d", &n);
 
-    return 0;
-}
+//     for (i = 1; i <= n - 2; i++)
+//     {
+//         a3 = a1 + a2;
+//         a1 = a2;
+//         a2 = a3;
+//     }
+
+//     printf("%d", a3);
+
+//     return 0;
+// }
