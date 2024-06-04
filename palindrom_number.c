@@ -3,9 +3,7 @@
 int main() {
     int n;
     scanf("%d", &n);
-    int a[n][n];
-
-    for (int i = 0; i <= n; i++) {
+    int a[n][n];    for (int i = 0; i <= n; i++) {
         for (int j = 0; j <= i; j++) {
             if (j == 0 || j == i) {
                 a[i][j] = 1;
@@ -15,6 +13,10 @@ int main() {
                 printf("%d ", a[i][j]);
         }
         printf("\n");
+    }
+    int fib=0;
+    for(int k = 0; k < n; k++) {
+        // 
     }
 
     return 0;

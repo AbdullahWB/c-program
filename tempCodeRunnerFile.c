@@ -1,11 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int n, tmp1 = 0, tmp2 = 1, next, sum = 0;
-    scanf("%d", &n);
-    next = tmp1 + tmp2;
-    tmp1 = tmp2;
-    tmp2 = next;
-    printf("%d",next);
+
+    int a[3][3] = {(1, 2, 3), (3, 4, 5), (5, 6, 7)}, i, j, s = 0;
+
+    for (i = 0; i < 3; i++)
+
+        for (j = i; j < 3; j++)
+            s += a[i][j];
+
+    printf("%d\n", s);
     return 0;
 }
